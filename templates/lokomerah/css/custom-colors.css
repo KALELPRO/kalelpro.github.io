@@ -1,0 +1,19 @@
+
+/* Main color Scheme */
+.main-menu-custom .wrapper, .main-spacer.ribbon, .more-link, .main-title, .main-title .ribbon .inner, .tabs .tab-navi li.active a, .main-title .ribbon-tail .inner-top, .main-title .ribbon-tail .inner-bottom, .pagination .page-numbers.current {
+	background-color: #3375e0;
+}
+.main-menu-custom .wrapper, .split-content .content-white.small .widget .title h3, .reservation-navi h4, .photo-gallery-block .page-numbers span, blockquote, .title-red, .events .item h6, .sidebar-content .widget > .title h3, .blog-list-1 .item .comments a, .blog-list-1 .item .section a, .blog-list-1 .item .author a {
+	color: #3375e0;
+}
+.tabs .tab-navi {
+	border-bottom: 3px solid #3375e0;
+}
+blockquote.style-3 {
+	border: 1px dashed #3375e0;
+}
+
+/* Link colors */
+.content a {
+	color: #3375e0;
+}

@@ -1,0 +1,35 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^index\.php$ media.php?module=home [L]
+
+RewriteRule ^berita-(.*)/(.*)\.html$ media.php?module=detailberita&id=$1 [L]
+RewriteRule ^semua-berita\.html$ media.php?module=semuaberita [L]
+RewriteRule ^halberita-(.*)\.html$ media.php?module=semuaberita&halberita=$1 [L]
+RewriteRule ^topik/(.*)\.html$ media.php?module=topikberita&id=$1 [L]
+
+RewriteRule ^kategori-([0-9]+)-(.*)\.html$ media.php?module=detailkategori&id=$1 [L]
+RewriteRule ^halkategori-([0-9]+)-(.*)\.html$ media.php?module=detailkategori&id=$1&halkategori=$2 [L]
+
+RewriteRule ^semua-album\.html$ media.php?module=semuaalbum [L]
+RewriteRule ^album-([0-9]+)-(.*)\.html$ media.php?module=detailalbum&id=$1 [L]
+
+RewriteRule ^semua-agenda\.html$ media.php?module=semuaagenda [L]
+RewriteRule ^agenda-(.*)/(.*)\.html$ media.php?module=detailagenda&id=$1 [L]
+
+RewriteRule ^semua-video\.html$ media.php?module=semuavideo [L]
+RewriteRule ^video-(.*)/(.*)\.html$ media.php?module=detailvideo&id=$1 [L]
+
+RewriteRule ^hasil-polling\.html$ media.php?module=hasilpolling&id=$1 [L]
+RewriteRule ^lihat-polling\.html$ media.php?module=lihatpolling&id=$1 [L]
+
+RewriteRule ^hubungi-kami\.html$ media.php?module=hubungikami&id=$1 [L]
+RewriteRule ^hubungi-aksi\.html$ media.php?module=hubungiaksi&id=$1 [L]
+
+RewriteRule ^semua-download\.html$ media.php?module=semuadownload [L]
+
+RewriteRule ^statis-(.*)/(.*)\.html$ media.php?module=halamanstatis&id=$1 [L]
+
+RewriteRule ^hasil-pencarian\.html$ media.php?module=hasilcari&id=$1 [L]
+
+</IfModule>
